@@ -44,6 +44,13 @@ p,h1,h2{
     color: #FFF;
     padding: 1rem;
     border-radius: 1.2rem;
+    border: none;
+}
+.orange{
+    color: var(--main-color-1);
+}
+.sky-blue{
+    color: var(--main-color-2);
 }
 /* common style end */
 
@@ -111,6 +118,146 @@ p,h1,h2{
 }
 /* nav bar style end */
 
+/* banner style start */
+.banner-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 6rem;
+}
+.banner-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+.banner-title{
+    font-size: 5.6rem;
+    font-weight: bold;
+    line-height: 6.1rem;
+}
+.banner-btn{
+    background-color: var(--font-color);
+    font-weight: bold;
+    line-height: 3rem;
+    padding: 1rem 4.7rem;
+}
+/* banner style end */
+
+/* curriculim section start */
+.curriculum-section > .title{
+    font-size: 4.6rem;
+    line-height: 5.75rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.curriculum-section .boxs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.8rem;
+}
+.curriculum-section .boxs .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18.86px;
+    padding: 52.82px 40.5px 53.76px;
+    box-shadow:inset 0px 0px 28.2px 0.94px rgba(0, 0, 0, 0.05);
+    /* background-image: linear-gradient(#DEF5FF, #FFFFFF); */
+}
+.curriculum-section .boxs .box-1{
+    background-image: linear-gradient(#DEF5FF, #FFFFFF);
+    border: 2px solid #DEF5FF;
+}
+.curriculum-section .boxs .box-2{
+    background-image: linear-gradient(#FFF4DC, #FFFFFF);
+    border: 2px solid #FFF4DC;
+}
+.curriculum-section .boxs .box-3{
+    background-image: linear-gradient(#EEE1FF, #FFFFFF);
+    border: 2px solid #F2E8FF;
+}
+.curriculum-section .boxs .box .img{
+    width: 136.76px;
+    height: 136.76px;
+    margin-bottom: 32.07px;
+}
+.curriculum-section .boxs .box .img img{
+    width: 100%;
+}
+.curriculum-section .boxs .box .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.curriculum-section .boxs .box .description .title{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30.7px;
+    color: var(--font-color);
+    margin-bottom: 33.48px;
+}
+.curriculum-section .boxs .box .description .para{
+    font-size: 15.09px;
+    font-weight: 500;
+    line-height: 28.3px;
+    color: #808080;
+    margin-bottom: 33.95px;
+}
+.read-more a{
+    font-size: 15.09px;
+    font-weight: bold;
+    line-height: 28.3px;
+}
+.box-1 .read-more a{
+    color: #64C8FF;
+}
+.box-2 .read-more a{
+    color: #F0AA00;
+}
+.box-3 .read-more a{
+    color: #8700FF;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+}
+.arrow div{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--main-color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s linear, background-color 0.2s linear;
+}
+.arrow div:hover{
+    background-color: rgba(240, 170, 0, 0.95);
+}
+.arrow .left:hover{
+    transform: translateX(-10px);
+}
+.arrow .right:hover:hover{
+    transform: translateX(10px);
+}
+.arrow div i{
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+}
+/* curriculim section end */
+
 
 
 
@@ -131,13 +278,55 @@ p,h1,h2{
 
 
 /* laptop */
-@media only screen and (max-width:1040px) {
+@media only screen and (max-width:1024px) {
     html{
         font-size: 55%;
     }
     .nav-section ul{
         gap: 2.4rem;
     }
+    /* banner */
+    .banner-title{
+        font-size: 32px;
+        line-height: normal;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    /* curriculum */
+    .curriculum-section .boxs{
+        gap: 2.4rem;
+    }
+    .curriculum-section .boxs .box{
+        border-radius: 18.86px;
+        padding: 42.82px 30.5px 43.76px;
+        /* background-image: linear-gradient(#DEF5FF, #FFFFFF); */
+    }
+    .curriculum-section .boxs .box .img{
+        width: 136.76px;
+        height: 136.76px;
+        margin-bottom: 30.07px;
+    }
+    .curriculum-section .boxs .box .img img{
+        width: 100%;
+    }
+    .curriculum-section .boxs .box .description .title{
+        font-size: 20px;
+        line-height: 30.7px;
+        margin-bottom: 20px;
+    }
+    .curriculum-section .boxs .box .description .para{
+        font-size: 14.09px;
+        line-height: 26.3px;
+        margin-bottom: 24px;
+    }
+    
+    
+    
+    
 }
 
 
@@ -176,6 +365,43 @@ p,h1,h2{
         font-size: 30px;
         color: var(--font-color);
     }
+    /* banner */
+    .banner-section{
+        padding: 0 16px;
+        gap: 18px;
+    }
+    .banner-title{
+        font-size: 26px;
+        line-height: normal;
+    }
+    .banner-para{
+        font-size: 14px;
+    }
+    .banner-btn{
+        font-size: 16px;
+    }
+    /* curriculum */
+    .curriculum-section{
+        margin-top: 40px;
+    }
+    .curriculum-section .boxs{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+        width: 100%;
+        padding: 0px 16.5px;
+        /* width: 90%; */
+    }
+    /* .curriculum-section .boxs .box{
+        width: 90%;
+    } */
+    .curriculum-section > .title{
+        font-size: 26px;
+    }
+    .arrow{
+        display: none;
+    }
 }
 
 
@@ -200,5 +426,62 @@ p,h1,h2{
         display: block;
         font-size: 22.5px;
     }
+    /* banner */
+    .banner-section{
+        flex-direction: column-reverse;
+        gap: 20px;
+        margin-top: 8px;
+        padding: 20px 16px;
+    }
+    .banner-img{
+        padding: 0px 10.21px;
+    }
+    .banner-description{
+        align-items: center;
+        text-align: center;
+    }
+    .banner-btn{
+        border-radius: 8px;
+        padding: 6px 24px;
+    }
+    /* curriculum */
     
+    .curriculum-section .boxs{
+        gap: 12.3px;
+    }
+    .curriculum-section .boxs .box{
+        border-radius: 12.77pxpx;
+        padding: 36px 28px;
+        /* background-image: linear-gradient(#DEF5FF, #FFFFFF); */
+    }
+    
+    .curriculum-section .boxs .box .img{
+        width: 92.6px;
+        height: 92.6px;
+        margin-bottom: 22px;
+    }
+    .curriculum-section .boxs .box .img img{
+        width: 100%;
+    }
+    .curriculum-section .boxs .box .description .title{
+        font-size: 16.6px;
+        line-height: 20.8px;
+        margin-bottom: 22px;
+        color: #202020;
+    }
+    .curriculum-section .boxs .box .description .para{
+        font-size: 10.22px;
+        font-weight: 500;
+        line-height: 19.2px;
+        margin-bottom: 22px;
+    }
+    .read-more a{
+        font-size: 10.22px;
+        font-weight: bold;
+        line-height: 19.2px;
+    }
+    .arrow{
+        display: none;
+    }
+
 }
