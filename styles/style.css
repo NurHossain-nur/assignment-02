@@ -271,6 +271,127 @@ p,h1,h2{
 }
 /* curriculim section end */
 
+/* stories section start */
+#hide-2, #hide-3{
+    display: none;
+}
+.stories-section{
+    padding: 6rem 14rem;
+    background-image: url(../assets/bg.png), linear-gradient(#FFF, rgba(254,163,1,0.3));
+    /* background-size: contain; */
+    /* background-position: center; */
+}
+.stories-section .title{
+    font-size: 4.6rem;
+    font-weight: bold;
+    line-height: 5.75rem;
+    text-align: center;
+}
+.stories-cards{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1.9rem;
+    padding: 8rem 0rem;
+}
+.stories-cards .card-1{
+    grid-row: 1/3;
+}
+.stories-cards .card{
+    border-radius: 1.6rem;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.stories-img{
+    width: 100%;
+    margin-bottom: 3.833rem;
+    /* border-radius: 1.6rem 1.6rem 0rem 0rem; */
+    position: relative;
+}
+.card-1 .stories-img{
+    margin-bottom: 5.863rem;
+}
+.stories-img .date{
+    position: absolute;
+    background-color: #95B226;
+    padding: 10px 19px;
+    border-radius: 47.93px;
+    left: 7%;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.card-3 .stories-img .date{
+    background-color: #5D58F0;
+}
+.stories-img .date p{
+    font-size: 15.35px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: #FFF;
+}
+.card-1 .stories-img .date{
+    position: absolute;
+    background-color: #3CD8E8;
+    padding: 15px 19px;
+    border-radius: 47.93px;
+    left: 7%;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.card-1.stories-img .date p{
+    font-size: 15.35px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: #FFF;
+}
+.stories-img img{
+    width: 100%;
+    border-radius: 1.6rem 1.6rem 0rem 0rem;
+    /* margin-bottom: 3.833rem; */
+}
+.card-1 .stories-img img{
+    width: 100%;
+    border-radius: 1.6rem 1.6rem 0rem 0rem;
+    /* margin-bottom: 5.863rem; */
+}
+.card .stories-description{
+    margin: 0rem 3.8rem 2.9rem;
+}
+.card .stories-description .card-title{
+    font-size: 1.534rem;
+    font-weight: bold;
+    line-height: 2.88rem;
+    color: #000;
+}
+.card-1 .stories-description{
+    margin: 0rem 3.835rem 3.452rem;
+}
+.card-1 .stories-description .card-title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.84rem;
+    margin-bottom: 5.17rem;
+}
+.card-1 .stories-description .para{
+    font-size: 1.534rem;
+    font-weight: 500;
+    line-height: 2.88rem;
+}
+.stories-btn{
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-radius: 1.2rem;
+    background-color: var(--font-color);
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+    padding: 1rem 6.1rem;
+}
+/* stories section end */
+
 
 
 
@@ -285,6 +406,10 @@ p,h1,h2{
 @media only screen and (max-width:1300px) {
     body{
         padding: 0 3vw;
+    }
+    .section{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -415,6 +540,59 @@ p,h1,h2{
     .arrow{
         display: none;
     }
+    /* stories */
+    .stories-section{
+        padding: 40px 0px;
+    }
+    .stories-section .title{
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 57.5px;
+    }
+    .stories-cards{
+        padding: 20px 16px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 11.31px;
+    }
+    #hide-2, #hide-3{
+        display: block;
+    }
+    #hide-1{
+        display: none;
+    }
+    .card{
+        border-radius: 9.53px;
+    }
+    .card .img{
+        margin-bottom: 22.82px;
+    }
+    .card img{
+        border-radius: 9.53px 9.53px 0px 0px;
+        
+    }
+    .card .date{
+        padding: 6px 11.42px;
+        border-radius: 28.54px;
+    }
+    .card .date p{
+        font-size: 9.13px;
+        font-weight: 500;
+        line-height: 17.1px;
+    }
+    .card .stories-description{
+        margin: 0rem 22.65px 17px;
+    }
+    .card .stories-description .card-title{
+        font-size: 9.31px;
+        font-weight: bold;
+        line-height: 17.1px;
+    }
+    .stories-btn{
+        border-radius: 12px;
+        font-size: 16px;
+        line-height: 30px;
+        padding: 0px 37px;
+    }
 }
 
 
@@ -496,5 +674,11 @@ p,h1,h2{
     .arrow{
         display: none;
     }
+    /* stories */
+    /* .stories-cards{
+        grid-template-columns: repeat(1,1fr);
+    } */
+
+    /* -----------------------see css style in width 768px----------------*/
 
 }
