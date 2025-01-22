@@ -392,6 +392,78 @@ p,h1,h2{
 }
 /* stories section end */
 
+/* footer section start */
+.edu-2{
+    display: none;
+}
+.footer-section{
+    background-color: var(--main-color-2);
+}
+.footer-details{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 12.3rem 0rem 17.6rem;
+}
+.details-1{
+    grid-column: 1/3;
+    max-width: 400px;
+}
+.details-1 .head{
+    display: flex;
+    gap: 10.7px;
+    /* background-color: #FFF; */
+}
+.details-1 .head .img{
+    display: block;
+    width: 82.9px;
+    height: 82.9px;
+    background-color: #FFF;
+}
+.details-1 .head .img img{
+    width: 100%;
+}
+.details-1 .head p{
+    font-size: 4.214rem;
+    font-weight: bold;
+    line-height: 3.95rem;
+    width: 82.9px;
+    color: #FFF;
+}
+.details-1 > p{
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.details-2 .about{
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 3.2rem;
+}
+.details-2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.details-2 ul li a{
+    font-size: 2rem;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.details-3 .social-icon{
+    font-size: 2.6rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    margin-bottom: 3.2rem;
+    color: #FFF;
+}
+.details-3 ul{
+    display: flex;
+    gap: 1.015rem;
+}
+/* footer section end */
+
 
 
 
@@ -410,6 +482,9 @@ p,h1,h2{
     .section{
         padding-left: 0;
         padding-right: 0;
+    }
+    .footer-details{
+        margin:0 20px;
     }
 }
 
@@ -593,6 +668,52 @@ p,h1,h2{
         line-height: 30px;
         padding: 0px 37px;
     }
+    /* footer */
+    .edu-1{
+        display: none;
+    }
+    .edu-2{
+        display: block;
+        font-size: 35.73px;
+        line-height: 35.5px;
+    }
+    .footer-details{
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 60px 0px;
+    }
+    .details-1 .head .img{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 22.77px;
+    }
+    .details-1 > p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .about{
+        font-size: 20.35px;
+        font-weight: 600;
+        margin-bottom: 27.57px;
+    }
+    .details-2 ul{
+        gap: 17.15px;
+    }
+    .details-2 ul li a{
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .details-3 .social-icon{
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 22px;
+        margin-bottom: 37px;
+    }
+    .details-3 ul{
+        gap: 8.5px;
+    }
 }
 
 
@@ -681,4 +802,12 @@ p,h1,h2{
 
     /* -----------------------see css style in width 768px----------------*/
 
+
+    /* footer */
+    .footer-details{
+        grid-template-columns: 1fr;
+    }
+    .details-1{
+        grid-column: 1/2;
+    }
 }
