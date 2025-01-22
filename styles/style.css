@@ -24,9 +24,12 @@ html{
 body{
     max-width: 1440px;
     margin:0 auto;
-    padding: 0 14rem;
+    /* padding: 0 14rem; */
     background-color: var(--bg-color);
     /* background-color: aquamarine; */
+}
+.section{
+    padding: 0 140px;
 }
 
 
@@ -145,17 +148,15 @@ p,h1,h2{
 }
 /* banner style end */
 
-/* curriculim section start */
-body{
+/* curriculim section start  */
+ /* body{
     position: relative;
-}
+} */
 .curriculum-section{
-    position: absolute;
+    /* position: absolute; */
     background-image: url(../assets/bg.png);
     background-size: cover;
-    padding: 0 14rem;
     width: 100%;
-    left: 0;
     /* background-color: #05D4DF; */
 }
 .curriculum-section > .title{
@@ -242,7 +243,7 @@ body{
     align-items: center;
     gap: 10px;
     margin-top: 8rem;
-    margin-bottom: 6rem;
+    padding-bottom: 6rem;
 }
 .arrow div{
     width: 60px;
