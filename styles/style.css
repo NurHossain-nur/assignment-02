@@ -146,6 +146,18 @@ p,h1,h2{
 /* banner style end */
 
 /* curriculim section start */
+body{
+    position: relative;
+}
+.curriculum-section{
+    position: absolute;
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    padding: 0 14rem;
+    width: 100%;
+    left: 0;
+    /* background-color: #05D4DF; */
+}
 .curriculum-section > .title{
     font-size: 4.6rem;
     line-height: 5.75rem;
