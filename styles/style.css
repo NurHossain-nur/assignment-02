@@ -55,6 +55,9 @@ p,h1,h2{
 .sky-blue{
     color: var(--main-color-2);
 }
+button{
+    cursor: pointer;
+}
 /* common style end */
 
 
@@ -475,6 +478,8 @@ p,h1,h2{
     color: #FFF;
     font-size: 20px;
     padding: 4px;
+    max-width: 1160px;
+    margin: auto;
 }
 
 
